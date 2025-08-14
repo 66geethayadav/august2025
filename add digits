@@ -1,0 +1,12 @@
+class Solution:
+    def addDigits(self,nums):
+        while nums>9:
+            temp=0
+            while nums >0:
+                temp+=nums%10
+                nums=nums//10
+            nums=temp
+        return nums
+ob=Solution()
+nums=int(input())
+print(ob.addDigits(nums))            
